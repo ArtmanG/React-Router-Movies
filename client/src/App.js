@@ -17,10 +17,10 @@ const App = () => {
       <SavedList list={savedList} />
       
       <div>
-        <Route path='/'>
+        <Route exact path='/'>
           <MovieList />
         </Route>
-        <Route path='/movies/:id'>
+        <Route path='/movies/:movieID'>
           <Movie />
         </Route>
       </div>
